@@ -4,6 +4,7 @@ This Repo contains TF example for useful providers
 
 ## What this Repo does
 
+Assuming that you are familiar with the concepts of IaC and have worked with Terraform tool in the past here is a bit of information about this repo.
 
 We use the `random id` provider to assign a random id to the server it can be linked to the ami_id value of the created server by using keepers value.
 
