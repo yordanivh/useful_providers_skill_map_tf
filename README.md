@@ -6,14 +6,14 @@ This Repo contains TF example for useful providers
 
 Assuming that you are familiar with the concepts of IaC and have worked with Terraform tool in the past here is a bit of information about this repo.
 
+I am showing here how to use the providers `template_file` and `random_id`.
+
 We use the `random id` provider to assign a random id to the server it can be linked to the ami_id value of the created server by using keepers value.
 
-We also use the template file provider to which we give a shell script `setup.sh` and give it a value for a variable part of a template. This can be usefull when creating a many instances and providing names for each one for example.
+We also use the `template file` provider to which we give a shell script `setup.sh` and give it a value for a variable part of a template. This can be usefull when creating many instances and providing names for each one for example.
 
 In this case the template is a shell script setup.sh containing `echo "Deploying ${animal}"`
 `animal` variable could have different values assigned to it so the setup.sh script is used as a template.
-
-
 
 ## How to use this repo
 
